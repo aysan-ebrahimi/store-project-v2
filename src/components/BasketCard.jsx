@@ -2,15 +2,16 @@ import { MdDeleteOutline } from "react-icons/md";
 
 import { shortenText } from "../helpers/helper";
 
-import styles from "./BasketCard.module.css"
+import styles from "./BasketCard.module.css";
 
 const BasketCard = ({ data, clickHandler }) => {
-  const { image, title, quantity } = data;
+  const { price, image, title, quantity } = data;
 
   return (
     <div className={styles.card}>
       <img src={image} alt={title} />
-      <p>{shortenText(title) }</p>
+      <p>{shortenText(title)}</p>
+      <p>${price}</p>
       <div className={styles.actions}>
         {quantity === 1 && (
           <button onClick={() => clickHandler("REMOVE_ITEM", data)}>

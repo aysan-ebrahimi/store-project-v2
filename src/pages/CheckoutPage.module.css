@@ -1,0 +1,20 @@
+.empty {
+  border: 2px dashed #e2e2e2;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: gray;
+  font-weight: 600;
+  min-height: 300px;
+  align-items: center;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px;
+  min-height: 1000px;
+}
+.products {
+  width: 100%;
+}
