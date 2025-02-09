@@ -3,7 +3,7 @@ import { useSearchParams } from "react-router-dom";
 
 import Card from "../components/Card";
 import Loader from "../components/Loader";
-import { useProducts } from "../context/ProductContext";
+// import { useProducts } from "../context/ProductContext";
 
 import SearchBox from "../components/SearchBox";
 import Sidebar from "../components/Sidebar";
@@ -15,7 +15,8 @@ import {
 import styles from "./ProductsPage.module.css";
 
 const ProductsPage = () => {
-  const products = useProducts();
+  // const products = useProducts();
+  const products = [];
 
   const [displayed, setDisplayed] = useState([]);
   const [search, setSearch] = useState("");
